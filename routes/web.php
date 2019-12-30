@@ -13,5 +13,6 @@
 
 Route::get('/', function () {
     Route::resource("rest",'RestappController');
+    
     return view('welcome');
 });

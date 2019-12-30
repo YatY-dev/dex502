@@ -85,6 +85,7 @@ class RestappController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $items = Restdata::find($id)->delete();
+        return redirect('/rest');
     }
 }
